@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logo-sm.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="top-img">
+        <img src="./images/wraper.png" class="w-100" alt="" />
+      </div>
+      <nav class="navbar navbar-expand-lg" id="nav">
+        <div class="container nav-container rounded-4 px-3 shadow-lg">
+          <a class="navbar-brand text-white" href="#"
+            ><img src="./images/logo-sm.png" class="w-25" alt="logo" /> GAME
+            REVIEWS</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto category">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  data-category="mmorpg"
+                  href="#"
+                  >MMORPG</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-category="shooter" href="#">SHOOTER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-category="sailing" href="#">SAILING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-category="permadeath" href="#"
+                  >PERMADEATH</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-category="superhero" href="#"
+                  >SUPERHERO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-category="pixel" href="#">PIXEL</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div
+        class="loading w-100 d-flex justify-content-center align-items-center d-none"
+      >
+        <span class="loader"></span>
+      </div>
+      <section>
+        <div class="container">
+          <div class="row g-4 card-group" id="gameList">
+            <p
+              class="text-danger text-center d-none errorDisplay"
+              id="errorDisplay"
+            >
+              Failed to load games. Please try again later.
+            </p>
+            ;
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="gameInfo" class="d-none"></div>
+      </section>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
